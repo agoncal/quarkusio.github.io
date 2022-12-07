@@ -3,271 +3,198 @@
 
     <channel>
         <title>Quarkus</title>
-        <link>https://quarkus.io/</link>
+        <link>https://quarkus.io</link>
         <description>Quarkus: Supersonic Subatomic Java</description>
-        <lastBuildDate>Wed, 30 Oct 2019 08:36:45 +0000</lastBuildDate>
+        <lastBuildDate>Wed, 07 Dec 2022 15:47:46 +0000</lastBuildDate>
         
         <item>
-            <title>Quarkus 0.26.1 released - Stabilizing things and adding Vault support</title>
+            <title>Quarkus 2.14.3.Final released - Maintenance release</title>
             <link>
-                https://quarkus.io//blog/quarkus-0-26-1-released/
+                https://quarkus.io/blog/quarkus-2-14-3-final-released/
             </link>
             <description>
-                
-Keeping the rapid pace of one release per week, here comes Quarkus 0.26.1.
-
-
-Thanks a lot to the community at large for the useful bug reports, that helps a lot in stabilizing the new HTTP and security layers. Keep them coming.
-
-
-Apart from bugfixes, the new big thing in 0.26.1 is an extension adding support for HashiCorp Vault.
-
-
-
-
-
-
-
-
-
-The recommended version of GraalVM is still 19.2.0.1 as ...
+                Today, we released Quarkus 2.14.3.Final with a new round of bugfixes and documentation improvements. It is a recommended upgrade for anyone already using 2.14. If you are not already using 2.14, please refer to our migration guide. Full changelog You can get the full changelog of 2.14.3.Final on GitHub. Come...
             </description>
-            <pubDate>Wed, 23 Oct 2019 00:00:00 +0000</pubDate>
+            <pubDate>Tue, 06 Dec 2022 00:00:00 +0000</pubDate>
             <guid>
-                https://quarkus.io//blog/quarkus-0-26-1-released/
+                https://quarkus.io/blog/quarkus-2-14-3-final-released/
             </guid>
+            
+            
+            
+            <author>Guillaume Smet (https://twitter.com/gsmet_)</author>
+            
         </item>
         
         <item>
-            <title>Quarkus 0.25.0 released - Security layer updated</title>
+            <title>Quarkus support for AWS Lambda SnapStart</title>
             <link>
-                https://quarkus.io//blog/quarkus-0-25.0-released/
+                https://quarkus.io/blog/quarkus-support-for-aws-lambda-snapstart/
             </link>
             <description>
-                
-Just a few days after 0.24.0, and to stay in line with our planning, we release 0.25.0.
-
-
-This release fixes a couple of issues, mostly related to the new HTTP layer and brings some updates to the currently being rewritten security layer.
-
-
-What&#8217;s new?
-
-
-Security layer changes
-
-HTTP based permissions can now be defined in the application.properties.
-
-
-This new feature is fully documented...
+                Quarkus support for AWS Lambda SnapStart Amazon Web Services (AWS) announced the SnapStart feature for AWS Lambda. SnapStart for Java reduces startup latency for Java-based functions running on AWS Lambda, and Quarkus supports it from day one! Quarkus is supersonic subatomic Java with a focus on cloud-native applications. The idea...
             </description>
-            <pubDate>Wed, 16 Oct 2019 00:00:00 +0000</pubDate>
+            <pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate>
             <guid>
-                https://quarkus.io//blog/quarkus-0-25.0-released/
+                https://quarkus.io/blog/quarkus-support-for-aws-lambda-snapstart/
             </guid>
+            
+            
+            
+            <author>Shaaf, Syed (https://twitter.com/syshaaf)</author>
+            
         </item>
         
         <item>
-            <title>Quarkus on JBoss Asylum Podcast</title>
+            <title>Quarkus 2.14.2.Final and 2.13.5.Final released - Fix for CVE-2022-4116</title>
             <link>
-                https://quarkus.io//blog/quarkus-on-jboss-asylum-podcast/
+                https://quarkus.io/blog/quarkus-2-14-2-final-released/
             </link>
             <description>
-                
-Last week in a hotel room in Boston I managed to get Jason, Emmanuel and Bill from the Quarkus team to sit down and record episode #46 of JBoss Asylum.
-
-
-The episode is called "Quarkus to the bones" where we all four go into the details on the why and how on how Quarkus was created and what it is good for - all while having a bit of fun.
-
-
-The episode is posted on JBoss Community Asylum and al...
+                Today, we are announcing the release of Quarkus 2.14.2.Final and Quarkus 2.13.5.Final. Both releases fix CVE-2022-4116 which has been rated as severity high. This fix also hardens CORS handling, including changing 200 OK to 403 FORBIDDEN when a CORS request is rejected because of an invalid origin. It is highly...
             </description>
-            <pubDate>Mon, 14 Oct 2019 22:06:00 +0000</pubDate>
+            <pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate>
             <guid>
-                https://quarkus.io//blog/quarkus-on-jboss-asylum-podcast/
+                https://quarkus.io/blog/quarkus-2-14-2-final-released/
             </guid>
+            
+            
+            
+            <author>Guillaume Smet (https://twitter.com/gsmet_)</author>
+            
         </item>
         
         <item>
-            <title>Quarkus 0.24.0 released - Vert.x everywhere</title>
+            <title>Reactive CRUD Performance: A Case Study</title>
             <link>
-                https://quarkus.io//blog/quarkus-0-24.0-released/
+                https://quarkus.io/blog/reactive-crud-performance-case-study/
             </link>
             <description>
-                
-Due to serious outages of the OSS Sontype (our gate to Maven Central), we were unable to release as planned but&#8230;&#8203; here we are, 0.24.0 is out!
-
-
-This one is built on top of the shoulders of 0.23 to move more things to our new Vert.x based HTTP layer. It also introduces big changes to our security layer.
-
-
-What&#8217;s new?
-
-
-Servlet no longer required for JAX-RS
-
-This means that if ...
+                We were approached for comment about the relative performance of Quarkus for a reactive CRUD workload. This is a good case study into performance test design and some of the considerations required and hurdles that need to be overcome. What methodology can we derive for ensuring that the test we...
             </description>
-            <pubDate>Sat, 12 Oct 2019 00:00:00 +0000</pubDate>
+            <pubDate>Wed, 23 Nov 2022 23:00:00 +0000</pubDate>
             <guid>
-                https://quarkus.io//blog/quarkus-0-24.0-released/
+                https://quarkus.io/blog/reactive-crud-performance-case-study/
             </guid>
+            
+            
+            
+            <author>John O'Hara (https://twitter.com/JohnnyDoItAll)</author>
+            
         </item>
         
         <item>
-            <title>Quarkus 0.23.2 released - Back on track</title>
+            <title>Quarkus Tools for IntelliJ 1.14.0 released!</title>
             <link>
-                https://quarkus.io//blog/quarkus-0-23-2-released/
+                https://quarkus.io/blog/intellij-quarkus-tools-1.14.0/
             </link>
             <description>
-                
-Last week, we released Quarkus 0.23.1 which paved the way towards our new Vert.x based HTTP layer and brought a lot of new features (see the original announcement post for all the details).
-We discovered a memory usage regression shortly after the release: it was not a memory leak or anything that bad but an increased memory usage due to Netty getting a bit too comfortable.
-
-
-Today, we release...
+                We are very pleased to announce the 1.14.0 release of Quarkus Tools for IntelliJ. This release adds support for CodeActions and Quick Fixes. CodeActions / Quick Fixes When an error is detected on one of your Quarkus project files, it is highlighted in the source editor (for instance when you...
             </description>
-            <pubDate>Wed, 02 Oct 2019 00:00:00 +0000</pubDate>
+            <pubDate>Wed, 23 Nov 2022 00:00:00 +0000</pubDate>
             <guid>
-                https://quarkus.io//blog/quarkus-0-23-2-released/
+                https://quarkus.io/blog/intellij-quarkus-tools-1.14.0/
             </guid>
+            
+            
+            
+            <author>Jeff Maury (https://twitter.com/jeffmaury)</author>
+            
         </item>
         
         <item>
-            <title>Quarkus Newsletter #1</title>
+            <title>Redis Job Queue - Reloaded</title>
             <link>
-                https://quarkus.io//blog/quarkus-newsletter-1/
+                https://quarkus.io/blog/redis-job-queue-reloaded/
             </link>
             <description>
-                
-Welcome to the first episode of the Quarkus Newsletter. This is where we&#8217;ll post about new found publications related to Quarkus.
-
-
-If you feel something is missing or have an article coming out for future Quarkus Newsletter posts please open an issue with a short description and a url.
-
-
-In this first edition I&#8217;ve gathered list of interesting publications since the launch of Quark...
+                In How to implement a job queue with Redis, we explained how to implement a job queue mechanism with Redis and the new Redis API from Quarkus. The approach explored in that blog post had a significant flaw: if the execution of a job failed, the request was lost and...
             </description>
-            <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+            <pubDate>Tue, 22 Nov 2022 00:00:00 +0000</pubDate>
             <guid>
-                https://quarkus.io//blog/quarkus-newsletter-1/
+                https://quarkus.io/blog/redis-job-queue-reloaded/
             </guid>
+            
+            
+            
+            <author>Clement Escoffier (https://twitter.com/clementplop)</author>
+            
         </item>
         
         <item>
-            <title>Quarkus 0.23.1 released - Paving the way to our new HTTP layer</title>
+            <title>Quarkus 3.0.0.Alpha1 released - First iteration of our Jakarta EE 10 stream</title>
             <link>
-                https://quarkus.io//blog/quarkus-0-23-1-released/
+                https://quarkus.io/blog/quarkus-3-0-0-alpha1-released/
             </link>
             <description>
-                
-
-
-
-
-
-
-
-DO NOT USE 0.23.1 - PLEASE USE 0.23.2.
-
-
-We found a major memory regression in 0.23.1, we urge you to not use it and use 0.23.2 instead.
-
-
-
-
-
-
-We just released Quarkus 0.23.1.
-This version is an important milestone for us as it materializes one of our major objectives: relying on Vert.x for our entire HTTP layer.
-It also comes with a lot of improvements and bugfixes contributed by our v...
+                Last week, Max Andersen explained our plans for Quarkus 3 and Jakarta EE 10. I published yesterday a more detailed blog post explaining how we are building the Quarkus 3 stream. It is now time to announce Quarkus 3.0.0.Alpha1 which is the first iteration of our Quarkus 3 stream. A...
             </description>
-            <pubDate>Thu, 26 Sep 2019 00:00:00 +0000</pubDate>
+            <pubDate>Fri, 18 Nov 2022 00:00:00 +0000</pubDate>
             <guid>
-                https://quarkus.io//blog/quarkus-0-23-1-released/
+                https://quarkus.io/blog/quarkus-3-0-0-alpha1-released/
             </guid>
+            
+            
+            
+            <author>Guillaume Smet (https://twitter.com/gsmet_)</author>
+            
         </item>
         
         <item>
-            <title>Quarkus developer joy for VS Code</title>
+            <title>Quarkus Newsletter #26 - November</title>
             <link>
-                https://quarkus.io//blog/quarkus-developer-joy-for-vs-code/
+                https://quarkus.io/blog/quarkus-newsletter-26/
             </link>
             <description>
-                
-Earlier this year, we have been introduced to Quarkus, the next-generation, container-first framework for Java applications.
-As expected, such new frameworks and technologies make way for new developer tools focused on making
-the development experience even better.
-The recent Quarkus Tools for Visual Studio Code release
-aims to do just that,
-by bringing features specific to Quarkus project dev...
+                Yep, you guessed it, it&#8217;s time for the November Quarkus newsletter! Learn about the 2024 Observability roadmap with Roberto Cortez&#8217;s article. Read about making web applications more resilient against certain types of fraud with Erik Costlow&#8217;s "Quarkus Defends REST APIs against Attack" article. Watch a cool video to see how...
             </description>
-            <pubDate>Mon, 23 Sep 2019 00:00:00 +0000</pubDate>
+            <pubDate>Thu, 17 Nov 2022 00:00:00 +0000</pubDate>
             <guid>
-                https://quarkus.io//blog/quarkus-developer-joy-for-vs-code/
+                https://quarkus.io/blog/quarkus-newsletter-26/
             </guid>
+            
+            
+            
+            <author>James Cobb (https://twitter.com/insectengine)</author>
+            
         </item>
         
         <item>
-            <title>Quarkus 0.22.0 released</title>
+            <title>Our (bumpy) road to Jakarta EE 10</title>
             <link>
-                https://quarkus.io//blog/quarkus-0-22-0-released/
+                https://quarkus.io/blog/our-bumpy-road-to-jakarta-ee-10/
             </link>
             <description>
-                
-We just released Quarkus 0.22.0 including an improved Spring API support.
-
-
-We also officially launch code.quarkus.io: it has never been easier to create a Quarkus application.
-
-
-What&#8217;s new?
-
-
-Improved Spring API support
-
-Quarkus has had a Quarkus Extension for Spring Dependency Injection API since its initial release. The plan has always been to extend Spring API support and executing o...
+                Quarkus has been relatively silent on the Jakarta EE front until a few weeks ago, compared to some other frameworks who announced early clear plans with timelines. That doesn&#8217;t mean we were not actively preparing the transition and we have been incredibly busy making it a reality. Most of you...
             </description>
-            <pubDate>Mon, 16 Sep 2019 00:00:00 +0000</pubDate>
+            <pubDate>Thu, 17 Nov 2022 00:00:00 +0000</pubDate>
             <guid>
-                https://quarkus.io//blog/quarkus-0-22-0-released/
+                https://quarkus.io/blog/our-bumpy-road-to-jakarta-ee-10/
             </guid>
+            
+            
+            
+            <author>Guillaume Smet (https://twitter.com/gsmet_)</author>
+            
         </item>
         
         <item>
-            <title>Quarkus 0.21.2 released</title>
+            <title>Quarkus 2.14.1.Final released - Maintenance release</title>
             <link>
-                https://quarkus.io//blog/quarkus-0-21-2-released/
+                https://quarkus.io/blog/quarkus-2-14-1-final-released/
             </link>
             <description>
-                
-We just released Quarkus 0.21.2.
-
-
-What&#8217;s new?
-
-
-This release is all about fixing bugs, usability and documentation issues. We are still working on our next big release which will be 0.22.0.
-
-
-You can find the full changelog of 0.21.2 on GitHub.
-
-
-We have a lot of interesting things in the works so stay tuned.
-
-
-
-
-Contributors
-
-
-Quarkus has now 142 contributors.
-Many many thanks to each ...
+                Today, we released Quarkus 2.14.1.Final with some bugfixes and documentation improvements on top of our 2.14.0.Final release. It is a recommended upgrade for anyone already using 2.14. If you are not already using 2.14, please refer to our migration guide. GraalVM/Mandrel upgrade We don&#8217;t usually upgrade GraalVM/Mandrel in a micro...
             </description>
-            <pubDate>Thu, 05 Sep 2019 00:00:00 +0000</pubDate>
+            <pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate>
             <guid>
-                https://quarkus.io//blog/quarkus-0-21-2-released/
+                https://quarkus.io/blog/quarkus-2-14-1-final-released/
             </guid>
+            
+            
+            
+            <author>Guillaume Smet (https://twitter.com/gsmet_)</author>
+            
         </item>
         
     </channel>
